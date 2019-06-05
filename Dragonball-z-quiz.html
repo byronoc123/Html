@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Which Dragonball Z Character ar you?</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+background-color: lightblue;
+font-family: Helvetica;
+}
+
+#main {
+width: 80%;
+max-width: 950px;
+border: 1px gray solid;
+margin: auto;
+padding: 10px;
+background-color: white;
+border-radius: 10px;
+}
+
+#header {
+margin-top: 0;
+border: 2px solid black;
+padding: 5px;
+height: 250px;
+background: beige;
+background-image: url("https://qph.fs.quoracdn.net/main-qimg-62bdac21936ecb640f10fb1744497fd3");
+ background-size: 1000px 300px;
+}
+
+h1 {
+color: #EBAC09;
+text-align: center;
+}
+
+label {
+display: block;
+}
+
+input {
+width: 30px;
+margin-left: 20px;
+}
+
+h2 {
+clear: both;
+padding-top: 20px;
+}
+</style>
+
+</head>
+
+<body>
+<div id="main"><!-- open main div -->
+<div id="header"><!-- open header div -->
+</div><!-- close header div -->
+<h1 style="font-family:Impact">Which Dragonball Z Character are you?</h1>
+<form id="form1">
+<fieldset>
+<h2>What is your favourite activity to pass time?</h2>
+<label for="var_string"><input type="radio" name="variable" value="0" id="var_string" />Reading</label>
+<label for="var_join"><input type="radio" name="variable" value="5" id="var_join" />Playing computer games</label>
+<label for="var_info"><input type="radio" name="variable" value="25" id="var_info" />Working out</label>
+<label for="var_condition"><input type="radio" name="variable" value="10" id="var_condition"/>Writing a novel or poem</label>
+<label for="var_array"><input type="radio" name="variable" value="15" id="var_array"/> Hanging out with friends</label>
+<label for="var_name"><input type="radio" name="variable" value="20" id="var_array"/>Watching Tv shows or movies</label>
+
+<h2>Which action do you do first when you wake up in the mornings?</h2>
+<label for="sub_string"><input type="radio" name="sub" value="25" id="sub_string"/>Brush my teeth</label>
+<label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join"/>Shower</label>
+<label for="sub_info"><input type="radio" name="sub" value="10" id="sub_info" />Eat breakfast</label>
+<label for="sub_condition"><input type="radio" name="sub" value="20" id="sub_condition" />Go back to sleep</label>
+<label for="sub_array"><input type="radio" name="sub" value="15" id="sub_array" />Drink a glass of water</label>
+<label for="sub_name"><input type="radio" name="sub" value="5" id="sub_name" />Meditate</label>
+
+<h2>You are given the opportunity to make one wish, what do you wish for?</h2>
+<label for="cat_string"><input type="radio" name="con" value="0" id="cat_string" />World Peace</label>
+<label for="cat_join"><input type="radio" name="con" value="25" id="cat_join" />Ultimate wealth</label>
+<label for="cat_info"><input type="radio" name="con" value="5" id="cat_info" />The revival of a deceased loved one.</label>
+<label for="cat_condition"><input type="radio" name="con" value="10" id="cat_condition" />Ultimate strength</label>
+<label for="cat_array"><input type="radio" name="con" value="15" id="cat_array" />All the chocolate and deserts in the world</label>
+<label for="cat_name"><input type="radio" name="con" value="20" id="cat_name" />Eternal life</label>
+
+<h2>If you could choose one super power, what would it be?</h2>
+<label for="sup_string"><input type="radio" name="sup" value="20" id="sup_string" />Mind reader</label>
+<label for="sup_join"><input type="radio" name="sup" value="10" id="sup_join" />Teleportation</label>
+<label for="sup_info"><input type="radio" name="sup" value="5" id="sup_info" />Absorb others ability</label>
+<label for="sup_condition"><input type="radio" name="sup"  value="15" id="sup_condition" />Invisiblity</label>
+<label for="sup_array"><input type="radio" name="sup"  value="25" id="sup_array" />Immortality</label>
+<label for="sup_name"><input type="radio" name="sup"  value="0" id="sup_name" />Genuis brain power</label>
+
+<h2>What is your ideal type of date?</h2>
+<label for="svg_string"><input type="radio" name="svg" value="0" id="svg_string" />Going out to a nice resturant</label>
+<label for="svg_join"><input type="radio" name="svg" value="10" id="svg_join" />Home cooked meal</label>
+<label for="svg_info"><input type="radio" name="svg" value="20" id="svg_info" />Watching at show at the theatre</label>
+<label for="svg_condition"><input type="radio" name="svg"  value="15" id="svg_condition" />Going to a concert</label>
+<label for="svg_array"><input type="radio" name="svg"  value="5" id="svg_array" />Going on an adventure to an unknown location</label>
+<label for="svg_name"><input type="radio" name="svg"  value="25" id="svg_name" />Bowling/Gokarting</label>
+
+<h2>How would your friends descibe you in one word?</h2>
+<label for="if_string"><input type="radio" name="ifstate" value="0" id="if_string" />Shy</label>
+<label for="if_join"><input type="radio" name="ifstate" value="10" id="if_join" />Courageous</label>
+<label for="if_info"><input type="radio" name="ifstate" value="20" id="if_info" />Funny</label>
+<label for="if_condition"><input type="radio" name="ifstate"  value="5" id="if_condition" />Optimistic</label>
+<label for="if_array"><input type="radio" name="ifstate"  value="25" id="if_array" />Inquisitive</label>
+<label for="if_name"><input type="radio" name="ifstate"  value="5" id="if_name" />Friendly</label>
+
+<button type="submit" value="Submit">Submit</button>
+</fieldset>
+</form>
+<p>Your grade is: <span id="grade">__</span></p>
+<p id="grade2"></p>
+</div><!-- close main div -->
+
+
+
+<script>
+document.getElementById("form1").onsubmit=function() {
+       variable = parseInt(document.querySelector('input[name = "variable"]:checked').value);
+	   sub = parseInt(document.querySelector('input[name = "sub"]:checked').value);
+	   con = parseInt(document.querySelector('input[name = "con"]:checked').value);
+	   sup = parseInt(document.querySelector('input[name = "sup"]:checked').value);
+	   svg = parseInt(document.querySelector('input[name = "svg"]:checked').value);
+	   ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
+	     
+	   result = variable + sub + con + sup + svg + ifstate;
+	   
+	document.getElementById("grade").innerHTML = result;
+if (result == 0) {result2 = "You are Goku <br /><img src='https://vignette.wikia.nocookie.net/vsbattles/images/5/56/Goku_%28Base%29.png/revision/latest?cb=20160315175220' width='300'/>"};
+if (result == 5) {result2 = "You are Vegeta <br /><img src='https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/382f694d-c1d1-4613-af27-884fa10166d7/da7i9fw-80f9332c-4066-4aed-9959-2bb9215034f3.png' width='300'/>"};
+if (result == 10) {result2 = "You are Gohan <br /><img src='https://vignette.wikia.nocookie.net/protagonists/images/6/6c/Gohan.png/revision/latest?cb=20150904201310' width='300'/>"};
+if (result == 15) {result2 = "You are Goten <br /><img src='https://i.pinimg.com/originals/12/65/94/126594bd2260d6824f0546cfd7de4bb0.jpg' width='300'/>"};
+if (result == 20) {result2 = "You are Trunks <br /><img src='https://i.pinimg.com/originals/12/a7/e9/12a7e916fedb31c3c417864e6fee2888.png' width='300'/>"};
+if (result == 25) {result2 = "You are Krillin <br /><img src='https://vignette.wikia.nocookie.net/p__/images/e/e1/Krillin.png/revision/latest?cb=20151023224203&path-prefix=protagonist' width='300'/>"};
+if (result == 30) {result2 = "You are Cell <br /><img src='https://wallpapercave.com/wp/wp2851467.jpg' width='300'/>"};
+if (result == 35) {result2 = "You are Majin Buu <br /><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoKa_c2DdyvSOpugkdcYNMYWTJzkiZ6DxWGe7Bv2Ym-r1xYnQPWQ' width='300'/>"};
+if (result == 40) {result2 = "You are Andriod 18 <br /><img src='https://i.pinimg.com/originals/76/9b/07/769b07563d2d673ae61e5ee0ac2790d1.png' width='300'/>"};
+if (result == 45) {result2 = "You are Broly <br /><img src='https://vignette.wikia.nocookie.net/dbz-vs/images/8/83/Broly_lssj_render_by_lewildgoku-d5vw8n6.png/revision/latest?cb=20151114204143' width='300'/>"};
+if (result == 50) {result2 = "You are Frieza <br /><img src='https://i.pinimg.com/originals/c8/fb/91/c8fb91dd418165e23dec7e99a49bb77b.png' width='300'/>"};
+if (result == 55) {result2 = "You are King Vegeta <br /><img src='https://vignette.wikia.nocookie.net/theetw/images/6/65/King_Vegeta.png/revision/latest?cb=20180122025614' width='300'/>"};
+if (result == 60) {result2 = "You are Bardock <br /><img src='https://static.comicvine.com/uploads/scale_super/11122/111221049/5437938-bardock.jpg' width='300'/>"};
+if (result == 65) {result2 = "You are Gotega <br /><img src='https://www.pngkey.com/png/full/240-2407816_gogeta-xeno-by-urielalv-dragon-ball-heroes-gogeta.png' width='300'/>"};
+if (result == 70) {result2 = "You are Piccolo <br /><img src='https://banner2.kisspng.com/20180330/sbe/kisspng-dragon-ball-fighterz-piccolo-goku-gohan-frieza-piccolo-5abeba0cb19749.6428380915224489087274.jpg' width='300'/>"};
+if (result == 75) {result2 = "You are Master Roshi <br /><img src='https://carboncostume.com/wordpress/wp-content/uploads/2016/10/masterroshi.jpg' width='300'/>"};
+if (result == 80) {result2 = "You are Gotenks <br /><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuBkaLG4MDflStTFF3foGG3bsKWKBVOrWfyhalvnAmbDYjZ3VT' width='300'/>"};
+if (result == 85) {result2 = "You are Yamcha <br /><img src='https://vignette.wikia.nocookie.net/one-minute-meelee-fanon/images/5/54/Yamcha.png/revision/latest?cb=20150722205325' width='300'/>"};
+if (result == 90) {result2 = "You are Beerus <br /><img src='https://vignette.wikia.nocookie.net/vsdebating/images/9/97/Beerus.png/revision/latest?cb=20170426213354' width='300'/>"};
+if (result == 95) {result2 = "You are Bulma <br /><img src='https://vignette.wikia.nocookie.net/dragonball/images/e/eb/Bulma_-_Blood_Rubies_-_000.png/revision/latest?cb=20180809014555' width='300'/>"};
+if (result == 100) {result2 = "You are Old Kai <br /><img src='https://i.skyrock.net/3119/66663119/pics/2670672628_1.gif' width='300'/>"};
+if (result == 105) {result2 = "You are Babidi <br /><img src='https://i.pinimg.com/originals/45/91/2a/45912a0d8c611de03590cfa7e74e47be.png' width='300'/>"};
+if (result == 110) {result2 = "You are Android 17 <br /><img src='https://static.zerochan.net/Android.17.full.1758105.jpg' width='300'/>"};
+if (result == 115) {result2 = "You are Chi-Chi <br /><img src='https://i.pinimg.com/originals/88/1a/39/881a3997deb29ebe3accf37f0da6cda8.png' width='300'/>"};
+if (result == 120) {result2 = "You are Dabura <br /><img src='https://dreager1.files.wordpress.com/2013/01/dabura-1.png' width='300'/>"};
+if (result == 125) {result2 = "You are Great Ape <br /><img src='https://banner2.kisspng.com/20180425/ebw/kisspng-goku-krillin-gohan-ape-vegeta-1-2-moonlight-5ae023cac84013.1576154615246386668202.jpg' width='300'/>"};
+if (result == 130) {result2 = "You are King Kai <br /><img src='https://vignette.wikia.nocookie.net/vsbattles/images/d/d7/Kai-0.png/revision/latest?cb=20151004160916' width='300'/>"};
+if (result == 135) {result2 = "You are Shenron <br /><img src='https://static1.squarespace.com/static/51b3dc8ee4b051b96ceb10de/t/5a39ddec53450ae17a41c899/1513741806580/?format=2500w' width='300'/>"};
+if (result == 140) {result2 = "You are Supreme Kai <br /><img src='https://vignette.wikia.nocookie.net/dragonballfanon/images/2/27/Kaieastsupreme.png/revision/latest?cb=20140210154900' width='300'/>"};
+if (result == 145) {result2 = "You are Uub <br /><img src='https://i.pinimg.com/originals/d8/c4/6c/d8c46cb10c1f83d00b7b0c47c5c0bf77.png' width='300'/>"};
+if (result == 150) {result2 = "You are Majin Vegeta <br /><img src='http://static1.squarespace.com/static/592e2b9e03596e7bee3a458a/5ae2aeef0e2e72e8e1c403e9/5af7cb5caa4a99c18ca1e7c7/1528677583892/Majin+Vegeta.jpg?format=1500w' width='300'/>"};
+document.getElementById("grade2").innerHTML = result2; 
+
+
+return false; // required to not refresh the page; just leave this here
+} //this ends the submit function
+
+</script>
+
+
+</body>
+</html>
